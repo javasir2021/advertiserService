@@ -27,6 +27,7 @@ public class AdvertiserRestController {
 	@GetMapping("/getAdveriser")
 	public Advertiser getAdvertiser(Long id)
 	{
+		System.out.println("id---"+id);
 		return adService.getAdvertiser(id);
 	}
 	
